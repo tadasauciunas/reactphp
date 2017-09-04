@@ -2,6 +2,8 @@
     "name": "tadas/reactphp",
     "require": {
         "react/event-loop": "^0.4.3",
-        "react/stream": "0.7.3"
+        "react/stream": "0.7.3",
+        "react/promise": "^2.5",
+        "React/Socket": "^0.8.2"
     }
 }

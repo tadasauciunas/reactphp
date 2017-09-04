@@ -1,13 +1,13 @@
 <?php
 
-include '../vendor/autoload.php';
+include '../../vendor/autoload.php';
 
 use React\EventLoop\Factory as EventLoopFactory;
 use React\Stream\ReadableResourceStream;
 
 $loop = EventLoopFactory::create();
 
-$timer = $loop->addPeriodicTimer(0.0001, function () use (&$counter, $loop) {
+$timer = $loop->addPeriodicTimer(0.0001, function () {
     echo " ";
 });
 
