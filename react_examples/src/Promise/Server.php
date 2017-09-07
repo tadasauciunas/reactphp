@@ -14,7 +14,7 @@ $promise->done(function ($data) {
 });
 
 $counter = 0;
-$timer = $loop->addPeriodicTimer(0.5,
+$timer = $loop->addPeriodicTimer(0.2,
     function (\React\EventLoop\Timer\TimerInterface $timer) use (&$counter, $loop, $deferred) {
         echo ++$counter;
         if ($counter == 5) {

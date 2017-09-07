@@ -1,7 +1,5 @@
 <?php
 
-require '../../vendor/autoload.php';
-
 use React\Socket\ConnectionInterface;
 
 class ConnectionsPool

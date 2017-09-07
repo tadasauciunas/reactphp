@@ -1,6 +1,6 @@
 <?php
 
-include '../../vendor/autoload.php';
+require '../../vendor/autoload.php';
 
 use React\EventLoop\Factory as EventLoopFactory;
 use React\Stream\ReadableResourceStream;
@@ -19,6 +19,7 @@ $stream->on('data', function ($data) {
 
 $stream->on('close', function () use ($timer, $loop) {
     $loop->cancelTimer($timer);
+    echo PHP_EOL;
 });
 
 $loop->run();
